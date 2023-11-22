@@ -1,0 +1,468 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+  
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+}
+
+/* navbar logo */
+
+.logo { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.logo img {
+   width: 90px;
+}
+
+.title-logo { 
+   font-size: 40px;
+   position: relative;
+   top: 30px;
+   font-family: 'Lobster', sans-serif;
+}
+
+/* Formualarios*/
+
+/* main form*/
+
+.form-section {
+
+padding: 0;
+margin: 20px;
+display: flex;
+justify-content: space-between;
+}
+
+/* clientes y productos*/
+
+#form {
+position: relative;
+width: 350px;
+height: 525px;
+}
+
+.form-style{
+width:340px;
+height:500px;
+background:#e6e6e6;
+border-radius:8px;
+box-shadow:0 0 40px -10px #000;
+margin: 10px auto;
+padding:20px 30px;
+max-width:calc(100vw - 40px);
+box-sizing:border-box;
+font-family: 'Varela Round', sans-serif;
+position:relative
+}
+
+.form-title{
+margin:20px 0;
+padding-bottom:10px;
+width:250px;
+color:#2a2abb;
+border-bottom:3px solid #5454b6
+}
+
+input{
+width:100%;
+padding:10px;
+box-sizing:border-box;
+background:none;
+outline:none;
+resize:none;
+border:0;
+font-family: 'Varela Round', sans-serif;
+transition:all .3s;
+border-bottom:2px solid #6868d3
+}
+
+input:focus{
+border-bottom:2px solid #78788c
+}
+
+.form-text:before{content:attr(type);
+display:block;
+margin:28px 0 0;
+font-size:14px;
+color:#5a5a5a
+}
+
+.impPrecio { 
+width:50%;
+padding:10px;
+box-sizing:border-box;
+background:none;
+outline:none;
+resize:none;
+border:0;
+font-family: 'Varela Round', sans-serif;
+transition:all .3s;
+border-bottom:2px solid #6868d3
+}
+
+.impDescuento {
+width:50%;
+padding:10px;
+box-sizing:border-box;
+background:none;
+outline:none;
+resize:none;
+border:0;
+font-family: 'Varela Round', sans-serif;
+transition:all .3s;
+border-bottom:2px solid #6868d3
+}
+
+
+
+.btn-form-agg{
+position: relative;
+bottom: 50px;
+float:right;
+padding:8px 12px;
+margin:50px 0 0;
+font-family: 'Varela Round', sans-serif;
+border:2px solid #6868d3;
+border-radius: 20px;
+background:0;
+color:#6868d3;
+cursor:pointer;
+transition:all .3s
+}
+
+.btn-form-agg:hover{
+background:#6868d3;
+color:#fff
+}
+
+.btn-form-productos{
+  position: relative;
+  bottom: 20px;
+  float:right;
+  padding:8px 12px;
+  margin:45px 0 0;
+  font-family: 'Varela Round', sans-serif;
+  border:2px solid #6868d3;
+  border-radius: 20px;
+  background:0;
+  color:#6868d3;
+  cursor:pointer;
+  transition:all .3s
+  }
+  
+  .btn-form-productos:hover{
+  background:#6868d3;
+  color:#fff
+  }
+
+  .btn-form-vendedores{
+    position: relative;
+    top: 20px;
+    float:right;
+    padding:8px 12px;
+    margin:50px 0 0;
+    font-family: 'Varela Round', sans-serif;
+    border:2px solid #6868d3;
+    border-radius: 20px;
+    background:0;
+    color:#6868d3;
+    cursor:pointer;
+    transition:all .3s
+    }
+    
+    .btn-form-vendedores:hover{
+    background:#6868d3;
+    color:#fff
+    }
+
+  .pie-form img { 
+    position: relative;
+    width: 50px;
+  }
+
+  .pie-form-2 img { 
+    position: relative;
+    top: 20px;
+    width: 50px;
+  }
+  .pie-form-3 img { 
+    position: relative;
+    top: 50px;
+    width: 60px;
+  }
+
+    /* clientes y productos f*/
+
+/* Registro productos */
+
+/* Boton Select productos */
+
+  .box select {
+    background-color: #6868d3;
+    border-radius: 30px;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    border: none;
+    font-size: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+  }
+  
+  .box:hover::before {
+    color: rgba(7, 6, 6, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .box select option {
+    padding: 30px;
+  }
+
+  
+
+  #descuento { 
+    width: 20px;
+    height: 15px;
+  }
+
+  .descuento { 
+    font-size: 18px;
+  }
+
+  /* Listado de Productos*/
+
+.table h2 { 
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 30px;
+  font-family: 'Varela Round', sans-serif;;
+ 
+}
+ 
+#producto-table {
+  position: relative;
+  border-collapse: collapse; 
+  width: 100%; 
+  font-family: 'Varela Round', sans-serif;
+}
+
+
+#producto-table th {
+  background-color: #6868d3; 
+  color: white; 
+  padding: 15px; 
+  text-align: left; 
+}
+
+
+#producto-table td {
+  border: 1px solid #ddd; 
+  padding: 8px; 
+}
+
+
+#producto-table tr:nth-child(even) {
+  background-color: #f2f2f2; 
+}
+
+
+#producto-table tr:nth-child(odd) {
+  background-color: #ffffff; 
+}
+
+
+#producto-table tr:hover {
+  background-color: #ddd; 
+}
+
+/* modal  */
+
+.btns-modal {   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+
+}
+
+.btn-modal { 
+  position: relative;
+ 
+  width: 300px;
+  height: 30px;
+  margin-left: 20px;
+  font-family: 'Varela Round', sans-serif;
+  border:2px solid #6868d3;
+  border-radius: 20px;
+  background:0;
+  color:#6868d3;
+  cursor:pointer;
+  transition:all .3s
+}
+
+.btn-modal:hover{
+  background:#6868d3;
+  color:#fff
+  }
+
+
+
+
+
+.modal {
+  display: none; /* El modal está oculto por defecto */
+  position: fixed; /* El modal se posiciona fijo en la pantalla */
+  z-index: 1; /* El modal se muestra por encima de todo */
+  left: 0;
+  top: 0;
+  width: 100%; /* El modal ocupa todo el ancho */
+  height: 100%; /* El modal ocupa todo el alto */
+  overflow: auto; /* El modal tiene scroll si es necesario */
+  background-color: rgba(0,0,0,0.4); /* El modal tiene un fondo semi-transparente */
+}
+
+.modal-content {
+  background-color: white; /* El contenido del modal tiene un fondo blanco */
+  margin: 15% auto; /* El contenido del modal se centra vertical y horizontalmente */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* El contenido del modal tiene un ancho del 80% */
+}
+
+
+.close {
+  color: #aaa; /* El botón de cerrar tiene un color gris */
+  float: right; /* El botón de cerrar se posiciona a la derecha */
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black; /* El botón de cerrar cambia de color al pasar el mouse o al enfocarse */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .form-section {
+
+    padding: 0;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    }
+}
+
+.btns-modal { 
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.btn-modal {
+ border-bottom: 10px;
+}
+
+#producto-table {
+  position: relative;
+  border-collapse: separate; 
+  width: 100%; 
+  font-family: 'Varela Round', sans-serif;
+}
+
+
+#producto-table th {
+  background-color: #6868d3; 
+  color: white; 
+  padding: 15px; 
+  text-align: left; 
+}
+
+
+#producto-table td {
+  border: 1px solid #ddd; 
+  padding: 8px; 
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+
+  
+
+  .form-section {
+
+    padding: 0;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    }
+}
+
+#producto-table {
+  position: relative;
+  border-collapse:separate; 
+  width: 100%; 
+  font-family: 'Varela Round', sans-serif;
+}
+
+.btn-modal {
+left: 30px;
+ margin: 5px;
+}
+
+
+
+#producto-table th {
+  background-color: #6868d3; 
+  font-size: 10px;
+  color: white; 
+  padding: 15px; 
+  text-align: left; 
+}
+
+
+#producto-table td {
+  border: 1px solid #ddd; 
+  padding: 8px; 
+}
+
+@media only screen and (min-width: 768px) {
+  #producto-table th {
+    background-color: #6868d3; 
+    font-size: 12px;
+    color: white; 
+    padding: 15px; 
+    text-align: left; 
+  }
+
+  #producto-table {
+    position: relative;
+    border-collapse: separate; 
+    width: 100%; 
+    font-family: 'Varela Round', sans-serif;
+  }
+}
